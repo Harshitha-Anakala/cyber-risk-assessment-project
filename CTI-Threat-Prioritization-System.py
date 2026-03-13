@@ -56,3 +56,4 @@ print("\nCritical Threats:")
 for name, score in scored_techniques:
     if score >= 8.9:
         print(f"{name}-{score}")
+
