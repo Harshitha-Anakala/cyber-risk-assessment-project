@@ -2,106 +2,96 @@
 🔐 Cyber Risk Assessment & Threat Intelligence Platform
 📌 Overview
 
-This project is a Python-based platform designed to perform automated cyber risk assessment and integrate threat intelligence. It scans a target (IP/domain), identifies open ports, analyzes potential threats, and calculates a risk score with actionable recommendations.
+This project is a Python-based Cyber Risk Assessment Platform that automates vulnerability scanning and integrates threat intelligence to evaluate system security.
 
-The system combines:
+It scans a given IP address or domain, detects open ports, analyzes potential threats, and computes a risk score with actionable recommendations.
 
-  🔍 Network scanning (Nmap)
-  🌐 Threat intelligence (VirusTotal API)
-  📊 Risk scoring engine
-  📈 Interactive dashboard (Streamlit)
-
+🔧 Technologies Used
+🔍 Network Scanning – Nmap
+🌐 Threat Intelligence – VirusTotal API
+📊 Risk Analysis Engine
+📈 Dashboard – Streamlit
+⚡ Backend – FastAPI
+🗄 Database – SQLite
 🖥️ Home / Dashboard Preview
-  <p align="center">
-  <img src="Final_project/dashboard.png" width="800"/>
-</p>
+<p align="center"> <img src="Final_project/dashboard.png" width="800"/> <br> <em>Cyber Risk Dashboard – Real-time Risk Analysis</em> </p>
 
-    
 📂 Project Structure
-
 CyberScan/
-
+│
 ├── scanner.py          # Nmap-based port scanning
 ├── threat_intel.py     # VirusTotal API integration
 ├── risk_engine.py      # Risk calculation logic
 ├── api.py              # FastAPI backend
-├── dashboard.py        # Streamlit dashboard
+├── app.py              # Streamlit dashboard
 ├── cyberscan.db        # SQLite database
 └── README.md           # Project documentation
 
 ⚙️ Features
+🔍 Fast network scanning using Nmap
+🌐 Threat intelligence integration (VirusTotal API)
+📊 Risk scoring system (Low / Medium / High / Critical)
+📈 Interactive dashboard (charts, heatmaps, metrics)
+📄 PDF report generation
+📧 Email alerts for high-risk targets
+🕘 Scan history tracking
 
-    🔍 Fast network scanning using Nmap
-    🌐 Threat intelligence using VirusTotal API
-    📊 Risk scoring system (Low / Medium / High / Critical)
-    📈 Interactive dashboard (charts, heatmaps, metrics)
-    📄 PDF report generation
-    📧 Email alerts for high-risk targets
-    🕘 Scan history tracking
-    
 🧠 Modules Description
-
 1. scanner.py
-
-Performs fast and fallback scans using Nmap to detect open ports.
-
+Performs fast and fallback scans using Nmap
+Identifies open ports on the target system
 2. threat_intel.py
-
-Fetches threat data such as malicious/suspicious counts from VirusTotal.
-
+Fetches threat intelligence data from VirusTotal
+Analyzes malicious and suspicious activity
 3. risk_engine.py
-
 Calculates final risk score based on:
-    Exposure (open ports)
-    Threat intelligence
-    Context score
-   
-5. api.py
-
-Handles backend operations using FastAPI:
-    Scan requests
-    Data storage
-    Result retrieval
-   
+Exposure (open ports)
+Threat intelligence
+Context score
+4. api.py
+Built using FastAPI
+Handles:
+Scan requests
+Data storage
+Result retrieval
 5. app.py
+Streamlit-based dashboard
+Provides:
+Scan execution
+Data visualization
+Report download
 
-Streamlit-based dashboard for:
-    Running scans
-    Visualizing results
-    Downloading reports
-   
 🚀 How to Run
+1️⃣ Install Dependencies
+pip install -r requirements.txt
+2️⃣ Run Backend (Optional)
+uvicorn api:app --reload
+3️⃣ Run Dashboard
+streamlit run app.py
 
-    1. Install dependencies
-          pip install -r requirements.txt
-    2. Run Backend (optional)
-          uvicorn api:app --reload
-    3. Run Dashboard
-          streamlit run app.py
-          
 🔑 Requirements
-
-        Python 3.x
-        Nmap installed
-        VirusTotal API key 
-        
+Python 3.x
+Nmap installed
+VirusTotal API Key
 📊 Risk Calculation Logic
 
-Risk Score is calculated using:
+The Risk Score (0–10) is computed using:
 
-    Exposure Score → Based on open ports
-    Threat Score → From VirusTotal
-    Context Score → Default baseline
-
+Exposure Score → Based on number of open ports
+Threat Score → Derived from VirusTotal data
+Context Score → Default baseline factor
+🧮 Formula:
+Risk Score = (0.5 × Exposure) + (0.3 × Threat) + (0.2 × Context)
 🎯 Targets Used
+Public IP addresses
+Test domains
+Localhost / private networks (safe testing)
 
-        Public IP addresses
-        Test domains
-        Localhost / private networks (for safe testing)
+⚠️ Disclaimer
 
-⚠️ Note: Only scan systems you have permission to test.
+⚠️ This tool is intended for educational and authorized security testing only.
+Do NOT scan systems without proper permission.
 
+👩‍💻 Author
 
-
-👤 Author
 Anakala Harshitha
