@@ -18,10 +18,6 @@ This project is a Python-based Cyber Risk Assessment Platform that automates vul
 
         🗄 Database – SQLite
 
-🖥️ Home / Dashboard Preview
-
-<p align="center"> <img src="Final_project/images/dashboard1.png" width="800"/> <br> <em>Cyber Risk Dashboard – Real-time Risk Analysis</em> </p>
-
 📂 Project Structure
 CyberScan/
 
