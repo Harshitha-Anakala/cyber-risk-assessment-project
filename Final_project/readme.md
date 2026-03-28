@@ -20,7 +20,7 @@ This project is a Python-based Cyber Risk Assessment Platform that automates vul
 
 🖥️ Home / Dashboard Preview
 
-<p align="center"> <img src="Final_project/images/Screenshot 2026-03-28 063513.png" width="800"/> <br> <em>Cyber Risk Dashboard – Real-time Risk Analysis</em> </p>
+<p align="center"> <img src="Final_project/images/dashboard1.png" width="800"/> <br> <em>Cyber Risk Dashboard – Real-time Risk Analysis</em> </p>
 
 📂 Project Structure
 CyberScan/
