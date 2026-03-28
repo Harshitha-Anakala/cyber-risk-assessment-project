@@ -20,13 +20,19 @@ The system combines:
 📂 Project Structure
 
 CyberScan/
-│
+
 ├── scanner.py          # Nmap-based port scanning
+
 ├── threat_intel.py     # VirusTotal API integration
+
 ├── risk_engine.py      # Risk calculation logic
+
 ├── api.py              # FastAPI backend
+
 ├── dashboard.py        # Streamlit dashboard
+
 ├── cyberscan.db        # SQLite database
+
 └── README.md           # Project documentation
 
 ⚙️ Features
