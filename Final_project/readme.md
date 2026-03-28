@@ -2,23 +2,23 @@
 🔐 Cyber Risk Assessment & Threat Intelligence Platform
 📌 Overview
 
-This project is a Python-based Cyber Risk Assessment Platform that automates vulnerability scanning and integrates threat intelligence to evaluate system security.
+This project is a Python-based Cyber Risk Assessment Platform that automates vulnerability scanning and integrates threat intelligence to evaluate system security.It scans a given IP address or domain, detects open ports, analyzes potential threats, and computes a risk score with actionable recommendations.
 
-It scans a given IP address or domain, detects open ports, analyzes potential threats, and computes a risk score with actionable recommendations.
+🔧 Technologies Used:
 
-🔧 Technologies Used
 🔍 Network Scanning – Nmap
 🌐 Threat Intelligence – VirusTotal API
 📊 Risk Analysis Engine
 📈 Dashboard – Streamlit
 ⚡ Backend – FastAPI
 🗄 Database – SQLite
+
 🖥️ Home / Dashboard Preview
 <p align="center"> <img src="Final_project/dashboard.png" width="800"/> <br> <em>Cyber Risk Dashboard – Real-time Risk Analysis</em> </p>
 
 📂 Project Structure
 CyberScan/
-│
+
 ├── scanner.py          # Nmap-based port scanning
 ├── threat_intel.py     # VirusTotal API integration
 ├── risk_engine.py      # Risk calculation logic
