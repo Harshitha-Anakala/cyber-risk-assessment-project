@@ -104,6 +104,7 @@ CyberScan/
 ⚠️ This tool is intended for educational and authorized security testing only.
 Do NOT scan systems without proper permission.
 
+------------------------------------------------------------------------------------------------
 
 👩‍💻 Author
 
